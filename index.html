@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+    <body>
+        <center>
+            <h2>Do you love me?</h2>
+            <button onclick="alert('Thank you <3 I love you too!')">Yes</button>
+            <button id="funny" onmouseover="movingButton()" style="position: absolute">No</button>
+        </center>
+    <script>
+
+        function movingButton() {
+            let a = document.getElementById("funny");
+            let x = Math.round(Math.random() * window.innerWidth);
+            let y = Math.round(Math.random() * window.innerHeight);
+            a.style.left = x + 'px';
+            a.style.top = y + 'px';
+        }
+    </script>
+</body>
+</html>
